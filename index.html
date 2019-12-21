@@ -11,12 +11,16 @@
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/animsition.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/card.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="css/style.css">
+	  <link rel="stylesheet" href="css/card.css">
 
     <style>
+      body {
+        font-family: 'Rubik', sans-serif !important;
+      }
+
       .first-hero {
         margin-bottom: 100px;
       }
@@ -73,13 +77,32 @@
 	height: 120px;
 }
 
+.details {
+  margin-top: 8%;
+}
+
+.hello-text {
+  margin-top: 10%;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .details {
+    margin-top: 0px;
+  }
+
+  .hello-text {
+    padding: 0px;
+  }
+}
+
     </style>
   </head>
   <body>
   
   <div class="js-animsition animsition" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
 
-    <header class="templateux-navbar" data-aos="fade-down">
+    <header class="templateux-navbar" data-aos="fade-down" style="height: 10vh;">
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-3 col-3"><div class="site-logo"></div></div>
@@ -106,14 +129,14 @@
     </header>
 
     <!-- END templateux-navbar -->
-    <section class="templateux-hero first-hero">
+    <section class="templateux-hero first-hero" style="height: 90vh">
       <div class="container">
         <div class="row align-items-center justify-content-center intro">
-          <div class="col-md-10" data-aos="fade-up">
+          <div class="col-md-12" data-aos="fade-up">
               <div class="container">
                   Hello! I am
                   <h1 class="title is-1" style="color: #e81c4f">
-                    Ashraf Kamarudin
+                      <strong>Ashraf Kamarudin</strong>
                   </h1>
                   <h2 class="subtitle is-3">
                     Full Stack Web Developer
@@ -141,66 +164,38 @@
     </section>
     <!-- END templateux-hero -->
 
-    <section class="templateux-portfolio-overlap" id="next">
-      <div class="container-fluid justify-content-center" style="width: 1200px">
-        <div class="row">
-          <div class="col-md-6" data-aos="fade-up">
-
+    <section class="templateux-hero" style="background-color: #e81c4f; height: 100vh;">
+      <div class="container-fluid justify-content-center">
+        <div id="next" class="row" style="margin-top:40px;">
+          <div class="col-md-6 details" data-aos="fade-up">
             <div class="row">
-    		<div class="col-md-10">
-				<div class="project-hover">
-                <div class="project-hover-inner">
-                  <h2>About Me</h2><br>
-                  <span>
-					  <p>Web developer of well-rounded experience with a degree in the field of Computer Science and major in Software Engineering.I have extensive knowledge of modern Web techniques and love for Coffee.I am passionate in programming and have strong drive and motivation to learn new things.</p>
-					
-					  <p>I am looking for an opportunity to apply my knowledge and upgrade, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community.</p>
-					</span>
+    		      <div class="col-md-12">
+				        <div class="project-hover">
+                  <div class="project-hover-inner text-center text-light">
+                    <img class="img-fluid" src="images/web-design.png">
+                  </div>
                 </div>
-              </div>
-    		</div>
+    		      </div>
             </div>
           </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <a class="project animsition-link" href="work-single.html">
-                        <h3 class="progress-title">HTML5</h3>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:70%; background:#97c513;">
-                                <div class="progress-value">70%</div>
-                            </div>
-                        </div>
-             
-                        <h3 class="progress-title">CSS3</h3>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:70%; background:#f2545b;">
-                                <div class="progress-value">70%</div>
-                            </div>
-						</div>
-						
-						<h3 class="progress-title">PHP</h3>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:70%; background:#7477ae;">
-                                <div class="progress-value">70%</div>
-                            </div>
-						</div>
-						
-						<h3 class="progress-title">JAVA</h3>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:40%; background:#00728b;">
-                                <div class="progress-value">40%</div>
-                            </div>
-						</div>
-						
-						<h3 class="progress-title">Laravel</h3>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:60%; background:#ff2c21;">
-                                <div class="progress-value">60%</div>
-                            </div>
-                        </div>
-            </a>
+          <div class="col-md-6 details" data-aos="fade-up">
+            <div class="row">
+    		      <div class="col-md-12">
+				        <div class="project-hover" style="margin: auto;">
+                  <div class="project-hover-inner text-center text-light hello-text">
+                    <strong>
+                    <h2 class="text-light">Hello, Nice to meet you.</h2></strong><br>
+                    <span>
+					            <p>Web developer of well-rounded experience with a degree in the field of Computer Science and major in Software Engineering.I have extensive knowledge of modern Web techniques and love for Coffee.I am passionate in programming and have strong drive and motivation to learn new things.</p>
+					
+					            <p>I am looking for an opportunity to apply my knowledge and upgrade, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community.</p>
+					          </span>
+                  </div>
+                </div>
+    		      </div>
+            </div>
           </div>
         </div>
-        <!-- END row -->
       </div>
     </section>
 
