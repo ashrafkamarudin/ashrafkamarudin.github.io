@@ -15,210 +15,205 @@
     
 
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap" rel="stylesheet">
-	  <link rel="stylesheet" href="css/style.css">
-	  <link rel="stylesheet" href="css/card.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/card.css">
 
     <style>
-      body {
+    body {
         font-family: 'Rubik', sans-serif !important;
-      }
+    }
 
-      .first-hero {
+    .first-hero {
         margin-bottom: 100px;
-      }
+    }
 
     .progress-title{
-    font-size: 16px;
-    font-weight: 700;
-    color: #333;
-    margin: 0 0 20px;
-}
-.progress{
-    height: 10px;
-    background: #333;
-    border-radius: 0;
-    box-shadow: none;
-    margin-bottom: 30px;
-    overflow: visible;
-}
-.progress .progress-bar{
-    position: relative;
-    -webkit-animation: animate-positive 2s;
-    animation: animate-positive 2s;
-}
-.progress .progress-bar:after{
-    content: "";
-    display: inline-block;
-    width: 9px;
-    background: #fff;
-    position: absolute;
-    top: -10px;
-    bottom: -10px;
-    right: -1px;
-    z-index: 1;
-    transform: rotate(35deg);
-}
-.progress .progress-value{
-    display: block;
-    font-size: 16px;
-    font-weight: 600;
-    color: #333;
-    position: absolute;
-    top: -30px;
-    right: -25px;
-}
-@-webkit-keyframes animate-positive{
-    0%{ width: 0; }
-}
-@keyframes animate-positive {
-    0%{ width: 0; }
-}
+        font-size: 16px;
+        font-weight: 700;
+        color: #333;
+        margin: 0 0 20px;
+    }
 
-.footer-img {
-	width: 400px;
-	height: 120px;
-}
+    .progress{
+        height: 10px;
+        background: #333;
+        border-radius: 0;
+        box-shadow: none;
+        margin-bottom: 30px;
+        overflow: visible;
+    }
 
-.details {
-  margin-top: 8%;
-}
+    .progress .progress-bar{
+        position: relative;
+        -webkit-animation: animate-positive 2s;
+        animation: animate-positive 2s;
+    }
+    
+    .progress .progress-bar:after{
+        content: "";
+        display: inline-block;
+        width: 9px;
+        background: #fff;
+        position: absolute;
+        top: -10px;
+        bottom: -10px;
+        right: -1px;
+        z-index: 1;
+        transform: rotate(35deg);
+    }
+    
+    .progress .progress-value{
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        color: #333;
+        position: absolute;
+        top: -30px;
+        right: -25px;
+    }
 
-.hello-text {
-  padding: 5px;
-}
+    .second-hero {
+        background-color: #e81c4f;
+        height: 100vh;
+    }
 
-@media only screen and (max-width: 600px) {
-  .details {
-    margin-top: 0px;
-  }
+    @-webkit-keyframes animate-positive{
+        0%{ width: 0; }
+    }
+    @keyframes animate-positive {
+        0%{ width: 0; }
+    }
 
-  .hello-text {
-    padding: 0px;
-  }
-}
+    .footer-img {
+        width: 400px;
+        height: 120px;
+    }
 
-a:hover {
-  color: #fff;
-}
+    @media only screen and (max-width: 600px) {
+
+    }
+
+    a:hover {
+    color: #fff;
+    }
 
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
   
-  <div class="js-animsition animsition" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
+    <div class="js-animsition animsition" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
 
-    <header class="templateux-navbar" data-aos="fade-down" style="height: 10vh;">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-3 col-3"><div class="site-logo"></div></div>
-          <div class="col-sm-9 col-9 text-right">
+        <header class="templateux-navbar" data-aos="fade-down" style="height: 10vh;">
+            <div class="container-fluid">
+                <div class="row">
+                <div class="col-sm-3 col-3"><div class="site-logo"></div></div>
+                <div class="col-sm-9 col-9 text-right">
 
-            <button class="hamburger hamburger--spin toggle-menu ml-auto js-toggle-menu" type="button">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button>  
+                    <button class="hamburger hamburger--spin toggle-menu ml-auto js-toggle-menu" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                    </button>  
 
-            <nav class="templateux-menu js-templateux-menu" role="navigation">
-              <ul class="list-unstyled">
-                <li class="d-md-none d-block active"><a href="index.html" class="animsition-link">Home</a></li>
-                <li><a href="index.html" class="animsition-link">Home</a></li>
-                <li><a href="index.html" class="animsition-link">Work</a></li>
-                <li><a href="index.html" class="animsition-link">Resume</a></li>
-                <li><a href="index.html" class="animsition-link">Contact</a></li>
-              </ul>
-            </nav>  
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- END templateux-navbar -->
-    <section class="templateux-hero first-hero" style="height: 90vh">
-      <div class="container">
-        <div class="row align-items-center justify-content-center intro">
-          <div class="col-md-12" data-aos="fade-up">
-              <div class="container">
-                  Hello! I am
-                  <h1 class="title is-1" style="color: #e81c4f">
-                      <strong>Ashraf Kamarudin</strong>
-                  </h1>
-                  <h2 class="subtitle is-3">
-                    Full Stack Web Developer
-                  </h2>
-                    <a href="https://web.facebook.com/ashraf.kamarudin" class="mr-4">
-                      <i class="fa fa-facebook fa-2x"  style="color:#3273dc"></i>
-                    </a>
-                    <a href="https://www.instagram.com/ashee_kamarudin/" class="mr-4" style="color: #e81c4f">
-                      <i class="fa fa-instagram fa-2x"></i>
-                    </a>
-                    <a href="https://twitter.com/ashee_k" class="mr-4">
-                      <i class="fa fa-twitter fa-2x text-info" style="color: #209cee"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ashraf-kamarudin/" class="mr-4">
-                      <i class="fa fa-linkedin fa-2x" style="color: #3273dc"></i>
-                    </a>
-                    <a href="https://github.com/ashrafkamarudin" class="">
-                      <i class="fa fa-github fa-2x text-dark"></i>
-                    </a>
+                    <nav class="templateux-menu js-templateux-menu" role="navigation">
+                    <ul class="list-unstyled">
+                        <li class="d-md-none d-block active"><a href="index.html" class="animsition-link">Home</a></li>
+                        <li><a href="index.html" class="animsition-link">Home</a></li>
+                        <li><a href="index.html" class="animsition-link">Work</a></li>
+                        <li><a href="index.html" class="animsition-link">Resume</a></li>
+                        <li><a href="index.html" class="animsition-link">Contact</a></li>
+                    </ul>
+                    </nav>  
                 </div>
-            <a href="#next" class="go-down js-smoothscroll"></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END templateux-hero -->
-
-    <section class="templateux-hero" style="background-color: #e81c4f; height: 100vh;">
-      <div class="container-fluid justify-content-center">
-        <div id="next" class="row" style="margin-top:40px;">
-          <div class="col-md-6 details" data-aos="fade-up">
-            <div class="row">
-    		      <div class="col-md-12">
-				        <div class="project-hover">
-                  <div class="project-hover-inner text-center text-light">
-                    <img class="img-fluid" src="images/web-design.png">
-                  </div>
                 </div>
-    		      </div>
             </div>
-          </div>
-          <div class="col-md-6 details" data-aos="fade-up">
-            <div class="row">
-    		      <div class="col-md-12">
-				        <div class="project-hover" style="margin: auto;">
-                  <div class="project-hover-inner text-left text-light hello-text">
-                    <strong>
-                    <h2 class="text-light text-left">Hello,</h2></strong>
-                    <h1 class="text-light">&nbsp&nbsp&nbsp Nice to meet you.</h1></strong><br>
-                    <p>So, a little thing about me, I love puzzles. I can spend hours trying to figure out a puzzle and can spend multiple sleepless night if I cant solve it. Programming is just that, solving a set of problems that are just like puzzles.</p>
-                    <strong>
-                      <h2 class="text-light">
-                        <blockquote>
-                          "I love to create, And I find happiness in it"
-                        </blockquote>
-                      </h2>
-                    </strong><br>
-                    <span>
-                      <p>Whenever I have spare times, I would randomly built something. Either with codes, or on paper. I find enjoyment in solving the problems I find while developing and the finished products gave me a sense of accomplishedment.</p>
-                      
-                      <!-- Hover #1 -->
-   
-                      <a href="https://www.sekolahcode.com/author/ashraf-kamarudin/" target="_blank" class="button btn-two">
-                        <span>Check My Blog</span>
-                      </a>
-                      <div class="button btn-two">
-                        <span> or Portfolio</span>
-                      </div>
-					          </span>
-                  </div>
+        </header>
+
+        <!-- END templateux-navbar -->
+        <section class="templateux-hero first-hero" style="height: 90vh">
+            <div class="container">
+                <div class="row align-items-center justify-content-center intro">
+                    <div class="col-md-12" data-aos="fade-up">
+                        <div class="container">
+                            Hello! I am
+                            <h1 class="title is-1" style="color: #e81c4f">
+                                <strong>Ashraf Kamarudin</strong>
+                            </h1>
+                            <h2 class="subtitle is-3">
+                                Full Stack Web Developer
+                            </h2>
+                                <a href="https://web.facebook.com/ashraf.kamarudin" class="mr-4">
+                                <i class="fa fa-facebook fa-2x"  style="color:#3273dc"></i>
+                                </a>
+                                <a href="https://www.instagram.com/ashee_kamarudin/" class="mr-4" style="color: #e81c4f">
+                                <i class="fa fa-instagram fa-2x"></i>
+                                </a>
+                                <a href="https://twitter.com/ashee_k" class="mr-4">
+                                <i class="fa fa-twitter fa-2x text-info" style="color: #209cee"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/ashraf-kamarudin/" class="mr-4">
+                                <i class="fa fa-linkedin fa-2x" style="color: #3273dc"></i>
+                                </a>
+                                <a href="https://github.com/ashrafkamarudin" class="">
+                                <i class="fa fa-github fa-2x text-dark"></i>
+                                </a>
+                            </div>
+                        <a href="#next" class="go-down js-smoothscroll"></a>
+                    </div>
                 </div>
-    		      </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
+        <!-- END templateux-hero -->
+
+        <section class="templateux-hero second-hero">
+            <div class="container-fluid justify-content-center">
+                <div id="next" class="row align-items-center justify-content-center intro" style="margin-top:40px;">
+                    <div class="col-md-6 details" data-aos="fade-up">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="project-hover">
+                                    <div class="project-hover-inner text-center text-light">
+                                        <img class="img-fluid" src="images/web-design.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 details" data-aos="fade-up">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="project-hover" style="margin: auto;">
+                                    <div class="project-hover-inner text-left text-light hello-text">
+                                        <strong>
+                                            <h2 class="text-light text-left">Hello,</h2></strong>
+                                            <h1 class="text-light">&nbsp&nbsp&nbsp Nice to meet you.</h1></strong><br>
+                                            <p>So, a little thing about me, I love puzzles. I can spend hours trying to figure out a puzzle and can spend multiple sleepless night if I cant solve it. Programming is just that, solving a set of problems that are just like puzzles.</p>
+                                        <strong>
+                                            <h2 class="text-light">
+                                                <blockquote>
+                                                "I love to create, And I find happiness in it"
+                                                </blockquote>
+                                            </h2>
+                                        </strong><br>
+                                        <p>Whenever I have spare times, I would randomly built something. Either with codes, or on paper. I find enjoyment in solving the problems I find while developing and the finished products gave me a sense of accomplishedment.</p>
+                                        
+                                        <!-- Hover #1 -->
+                    
+                                        <a href="https://www.sekolahcode.com/author/ashraf-kamarudin/" target="_blank" class="button btn-two">
+                                            <span>Check My Blog</span>
+                                        </a>
+                                        <div class="button btn-two">
+                                            <span> or Portfolio</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     <a class="templateux-section templateux-cta animsition-link mt-5" href="contact.html" data-aos="fade-up">
       <div class="container-fluid">
