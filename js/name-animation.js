@@ -5,8 +5,8 @@
     amount = 0,
     mouse = {x:0,y:0},
     radius = 1;
-
-var colors = ["#468966","#FFF0A5", "#FFB03B","#B64926", "#8E2800"];
+    
+var colors = ["#e74960","#ed5c77", "#ed6367","#ed817f", "#e81c4f"];
 
 var copy = document.querySelector("#copy");
 
@@ -84,9 +84,9 @@ function initScene(){
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    ctx.font = "bold "+(ww/10)+"px sans-serif";
+    ctx.font = "bold "+(ww/3)+"px sans-serif";
     ctx.textAlign = "center";
-    ctx.fillText(copy.value, ww/2, wh/2);
+    ctx.fillText(copy.value, ww/1.5, wh/1.5);
 
     var data  = ctx.getImageData(0, 0, ww, wh).data;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
