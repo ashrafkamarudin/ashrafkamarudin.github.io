@@ -84,9 +84,9 @@ function initScene(){
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    ctx.font = "bold "+(ww/2.5)+"px sans-serif";
+    ctx.font = "bold "+(ww/1.7)+"px sans-serif";
     ctx.textAlign = "center";
-    ctx.fillText(copy.value, ww/1.5, wh/1.4);
+    ctx.fillText(copy.value, ww/1.6, wh/1.1);
 
     var data  = ctx.getImageData(0, 0, ww, wh).data;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
