@@ -20,7 +20,7 @@ function Particle(x,y){
         x : x,
         y: y
     };
-    this.r =  Math.random()*5 + 2;
+    this.r =  Math.random()*6 + 2;
     this.vx = (Math.random()-0.5)*20;
     this.vy = (Math.random()-0.5)*20;
     this.accX = 0;
@@ -84,9 +84,9 @@ function initScene(){
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    ctx.font = "bold "+(ww/1.7)+"px sans-serif";
+    ctx.font = "bold "+(ww/2.2)+"px sans-serif";
     ctx.textAlign = "center";
-    ctx.fillText(copy.value, ww/1.6, wh/1.1);
+    ctx.fillText(copy.value, ww/1.5, wh/1.3);
 
     var data  = ctx.getImageData(0, 0, ww, wh).data;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
